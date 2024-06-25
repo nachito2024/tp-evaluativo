@@ -1,0 +1,18 @@
+.encabezado{
+    justify-content: space-between;
+   align-items: center;
+    display: flex;
+    color: white;
+}
+.header{
+   
+    background-color: rgb(14, 14, 65);
+   
+    
+}
+.buscador{
+    max-width: 250px;
+    margin-left: 450px;
+    
+    
+}
