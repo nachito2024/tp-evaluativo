@@ -1,18 +1,109 @@
-.encabezado{
-    justify-content: space-between;
-   align-items: center;
-    display: flex;
-    color: white;
+/*APLICO ESTILOS A LA CANEZERA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .header{
+    width: 100%;
+    
+    font-family: 'PT Sans', sans-serif;
+  background-color: rgb(58, 110, 110);
+  border-bottom: 2px solid rgb(98, 212, 212);
+  
+}
+.nav{
+    width: 100%;
    
-    background-color: rgb(14, 14, 65);
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+.logo{
+    font-size: 25px;
+    color: black;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.menu{
+display: flex;
+align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+/*APLICO ESTILOS AL CUERPO*/
+.main{
+    height: 1000px;
+    background-color: rgb(60, 92, 92);
+}
+.caja-de-cards{
+    width: 150px;
+
     
 }
-.buscador{
-    max-width: 250px;
-    margin-left: 450px;
+.Inicio-destacado{
+    background-color: rgb(59, 104, 104);
+   
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     
-    
+
 }
+
+.card:hover{
+   scale: 1.1;
+    cursor: pointer;
+    transition: 200ms;
+    -webkit-box-shadow: 10px 10px 11px -2px rgba(199,193,193,1);
+    -moz-box-shadow: 10px 10px 11px -2px rgba(199,193,193,1);
+    box-shadow: 10px 10px 11px -2px rgba(199,193,193,1);
+}
+
+
+
+
+
+
+.clubes{
+    display: flex;
+}
+
+.boca_juniors{
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+border-radius: 50%;
+background-color: white;
+display: flex;
+}
+
+
+
+
+.destacado{
+    border-bottom: 2px solid rgb(98, 212, 212);
+    display: inline-block;
+    margin-left: 650px;
+}
+/*APLICO ESTILOS AL PIE*/

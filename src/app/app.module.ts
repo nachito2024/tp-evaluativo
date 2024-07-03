@@ -6,6 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component';
 
+import { SharedModule } from './modules/shared/shared.module';
+
+////////////////////////////////////////////////////////////////////////////////////7
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +27,14 @@ import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule,
+    
+    MatCardModule,
+    MatGridListModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
